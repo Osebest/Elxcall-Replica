@@ -54,7 +54,9 @@ header {
   list-style: none;
 }
 .nav li:hover{
-  color: #F9CF00;
+  transform: scale(1.4);
+  transition: .3s;
+  color: darkblue;
 }
 .button{
   border: 3px solid white;
@@ -121,7 +123,7 @@ nav li:hover{
   align-items: center;
 }
 .open1 {
-  height: 40vh;
+  height: 38vh;
   transition: .7s;
 }
 
@@ -211,6 +213,7 @@ main {
 .section3 small{
   letter-spacing: 8px;
 }
+.log, .log1{display: none;}
 
 /*Section 4 Styles*/
 .section4 {
@@ -275,6 +278,8 @@ main {
   border-radius: 0 35px 35px 0;
   color: rgba(0, 0, 0, .7);
 }
+.courier .button2:hover{background: white;color: blue;}
+.courier .button3:hover{color: blue;}
 
 /*Section 6 Styles*/
 .section6 {
@@ -297,9 +302,6 @@ main {
 
 
 /*Footer Styles*/
-footer{
-  overflow: hidden;
-}
 .foot{
   height: 40vh;
   background-image: url("./images/Footer.png");
