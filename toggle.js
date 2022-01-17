@@ -12,7 +12,7 @@ masks.forEach((mask) => {
   let tl = gsap.timeline({
     scrollTrigger: {
       trigger: mask,
-      start: "top center",
+      start: "top bottom",
       toggleActions: "restart reverse restart reverse",
     },
   });
@@ -105,9 +105,9 @@ gsap.from(".text3", {
 let animation = gsap.timeline({ default: {duration:1}});
 
 animation.from(".create", {
-  y:-50,
+  y:-20,
   opacity:0,
-  stagger:0.4,
+  stagger:0.1,
   ease:"back(5)",
   delay:.2,
   scrollTrigger:{
