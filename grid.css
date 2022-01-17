@@ -1,0 +1,160 @@
+@media only screen and (min-width: 600px) {
+  .wait{
+    display: block;
+    padding-right: 1em;
+  }
+  header .imgH{
+    flex-grow: 2;
+  }
+  nav button{
+    display: none;
+  }
+  .open1{
+    height: 25vh;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .section1 h1{font-size: 50px;}
+  header{padding: 20px 40px;}
+  #hamburgerBtn {
+    display: none;
+  }
+  .nav {
+    display: block;
+    flex-grow: 3;
+    margin-right: 5%;
+  }
+  .image{
+    display: none;
+  }
+  .image1{
+    display: block;
+    width: 120%;
+  }
+  .section1{
+    display: flex;
+    gap: 2em;
+    padding: 40px 5px 40px 40px;
+  }
+  .pricing{width: 70%; margin-left: -15px;}
+ 
+
+  .section2 {
+    display: grid;
+    grid-auto-flow: column;
+    grid: min-content / 1fr 1fr;
+    gap: 2em;
+    padding: 45px;
+    align-items: center;
+  }
+  .card1{width: 100%;}
+  .section2 h1{font-size: 45px;}
+  
+  .section3, .section4{
+    display: grid;
+    grid-auto-flow: column;
+    grid: min-content / 1fr 1fr;
+    gap: 2em;
+    padding: 45px;
+    align-items: center;
+    position: relative;
+  }
+  .deliv {width: 120%;}
+  .log{
+    width: 200px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 1%;
+  }
+
+  .section4>div:nth-of-type(1){
+    order: 2;
+  }
+  .log1{
+    width: 200px;
+    display: block;
+    position: absolute;
+    top: 3%;
+    left: 25%;
+  }
+  .deliv1{width: 110%;}
+
+
+  .sect5{
+    display: grid;
+    grid-auto-flow: column;
+    grid: min-content/1fr, 1fr;
+    padding: 0 0 45px 45px;
+  }
+  .phone{align-self: flex-end; margin-bottom: -40px; width: 110%;}
+  .courier .button2, .courier .button3{padding: 2em 4em;}
+ 
+
+  .section6 {
+    display: flex;
+    padding: 45px 5px 45px 75px;
+    justify-content: space-between;
+  }
+  .pric{width: 65%;}
+  .section6 h1{font-size: 45px;}
+  .section6 p{width: 90%;}
+
+}
+
+@media only screen and (min-width: 1024px) {
+  header{padding: 30px 100px;}
+  .nav li {
+    font-size: larger;
+    font-weight: bold;
+  }
+  .button{
+    padding: 1em 2em;
+    font-size: large;
+  }
+  .section1{
+    padding-left: 100px;
+    margin-bottom: 3em;
+  }
+  .section1 h1{font-size: 60px;}
+ 
+
+  .section2{
+   padding-left: 100px;
+  }
+  .why>p{width: 70%;}
+
+  .section3{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .deliv{
+    width: 100%;
+  }
+  .log{top: 0; right: 1%;}
+  .section3 h1{font-size: 50px;}
+  
+  
+  .section4 h1{
+    font-size: 55px;
+  }
+  .section4 p{width: 80%;}
+  .section4{gap: 4em;}
+  .log1{top: 0; left: 30%;}
+
+  .courier .button2, .courier .button3{padding: 2.5em 5em; cursor: pointer;}
+  #diff{font-size: 60px;}
+  .sect5 p{width: 65%;}
+  .sect5{padding-left: 100px;}
+  
+  
+  .section6{
+    padding-left: 120px;
+    padding-right: 100px;
+  }
+  .section6 h1{font-size: 60px;}
+  .section6 p{width: 60%;}
+  .pric{width: 50%;}
+}
+
+
