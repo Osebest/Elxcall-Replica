@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  * {box-sizing: border-box;}
+  html {background-color: rgb(146, 74, 74);}
+  span {display: block;}
+  h1{font-size: 4em; position: relative;}
+  .imgContainer{margin: 20% 0; width: 60%; margin-left: auto; margin-right: auto;}
+  .mask{width: 80%; overflow: hidden; visibility: hidden;}
+  .mask img{transform-origin: left; object-fit: cover;}
+  .second{width: 80%; margin-left: auto; margin-right: auto;}
+  .bottom{height: 100vh;}
+  .dif{color: whitesmoke;}
+  .dif h1{background-color: rgb(146, 74, 74); overflow: hidden;}
+  h1 span{display: block; transform: translateY(100%);}
+</style>
+<body>
+  <div class="dif">
+    <h1><span id="create">Animation Time</span></h1>
+    <h1><span id="create">Animation Reveal</span></h1>
+  </div>
+  
+  <div class="imgContainer">
+    <div class="mask">
+      <img src="./images/boy2.png" alt="" width="100%" height="100%">
+    </div>
+  </div>
+  <div class="imgContainer">
+    <div class="mask">
+      <img src="./images/amazed-boy-big-glasses-talking-phone-indoor-portrait-emotional-african-guy-green-t-shirt-calling-someone 1.png" alt="" width="100%" height="100%">
+    </div>
+  </div>
+  <div class="second">
+    <img src="./images/girl.jpg" alt="" width="100%">
+  </div>
+  <div class="bottom">
+
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/CSSRulePlugin3.min.js"></script>
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+  let masks = document.querySelectorAll('.mask');
+
+  masks.forEach(mask => {
+    let image = mask.querySelector('.mask img');
+
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: mask,
+        scrub:.5,
+        start: "top center",
+        toggleActions: "restart none reverse reset",
+      }
+    });
+
+    tl.set(mask, {autoAlpha:1});
+    tl.from(mask, 1.5, {
+      xPercent: -100,
+      ease: Power2.out,
+    });
+    tl.from(image, 1.5, {
+      xPercent: 100,
+      scale: 1.3,
+      delay: -1.5,
+      ease: Power2.out,
+    });
+    tl.fromTo(".second", {clipPath:"circle(5% at 77%40%)", scale:0.5},
+                     {clipPath:"circle(75% at 50%50%)", ease: "none",
+                     scale:1, delay:1.2,
+                      scrollTrigger:{
+                        trigger:".second",
+                        scrub:1,
+                        start:"top center",
+                        end:"top center-=200",
+                        toggleActions: "restart none restart reset"
+                      }});
+  });
+let animation = gsap.timeline({defaults: {ease:"SlowMo.easeOut"}});
+
+animation.to("#create", {y:"0%", duration:1, stagger:0.2});
+
+</script>
+</html>

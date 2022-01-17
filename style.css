@@ -14,7 +14,7 @@ body h1{
   line-height: 1;
   margin-bottom: 0;
 }
-h1, span p, .button1 p{
+h1, span p, .button1 p, .nav li{
  background-image: linear-gradient(to right, rgba(58, 186, 248, 1), rgba(99, 101, 241, 1));
  -webkit-background-clip: text;
  background-clip: text;
@@ -28,7 +28,7 @@ h1, span p, .button1 p{
 /*Header Styles*/
 header {
   overflow: hidden;
-  padding: 15px 25px;
+  padding: 20px 35px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -38,6 +38,7 @@ header {
 .imgH{
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .nav {
   display: none;
@@ -52,6 +53,7 @@ header {
 }
 .nav li {
   list-style: none;
+  cursor: pointer;
 }
 .nav li:hover{
   transform: scale(1.4);
@@ -137,7 +139,8 @@ main {
 /*Section 1 Styles*/
 .section1 {
   background-image: url("./images/header.png");
-  padding: 25px;
+  padding: 35px;
+  padding-top: 0;
   overflow: hidden;
 }
 .image{
@@ -164,7 +167,7 @@ main {
   margin-top: 20px;
 }
 .why{
-  padding: 25px;
+  padding: 35px;
 }
 .button1 {
   border-radius: 10px;
@@ -187,7 +190,7 @@ main {
   overflow: hidden;
   margin-bottom: 2em;
   margin-top: 2em;
-  padding: 25px;
+  padding: 35px;
 }
 .section3 h1{
   margin-bottom: .8em;
@@ -218,7 +221,7 @@ main {
 /*Section 4 Styles*/
 .section4 {
   overflow: hidden;
-  padding: 25px;
+  padding: 35px;
 }
 .section4 h1{
   margin-bottom: .8em;
@@ -234,7 +237,7 @@ main {
   background-image: url(./images/Rectangle\ 11109.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 25px 25px 0 25px;
+  padding: 35px 35px 0 35px;
   margin-top: 4em;
 }
 #diff{
@@ -284,7 +287,7 @@ main {
 /*Section 6 Styles*/
 .section6 {
   overflow: hidden;
-  padding: 25px;
+  padding: 35px;
 }
 .section6 p{
   margin-top: 30px;
@@ -306,3 +309,8 @@ main {
   height: 40vh;
   background-image: url("./images/Footer.png");
 }
+
+/*Animation*/
+.mask img{transform-origin: left; object-fit: cover;}
+.mask{visibility: hidden; overflow: hidden;}
+
