@@ -1,7 +1,25 @@
 function openSideMenu() {
   document.getElementById("hamburgerBtn").classList.toggle("open");
   document.getElementById("primaryNav").classList.toggle("open1");
+};
+
+let ele1 = document.getElementById("permit");
+let ele2 =document.getElementById("switch");
+let ele3 =document.getElementById("diff2");
+let ele4 =document.getElementById("diff3");
+function switched(){
+  ele1.classList.add("button4")
+  ele2.classList.add("button5");
+  ele3.style.display = 'none';
+  ele4.style.display = 'block';
+};
+function unswitched(){
+  ele1.classList.remove("button4");
+  ele2.classList.remove("button5");
+  ele3.style.display = 'block';
+  ele4.style.display = 'none';
 }
+
 
 gsap.registerPlugin(ScrollTrigger);
 let masks = document.querySelectorAll(".mask");

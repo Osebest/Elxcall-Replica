@@ -14,7 +14,7 @@ body h1{
   line-height: 1;
   margin-bottom: 0;
 }
-h1, span p, .button1 p, .nav li{
+h1, span p, .button1 p{
  background-image: linear-gradient(to right, rgba(58, 186, 248, 1), rgba(99, 101, 241, 1));
  -webkit-background-clip: text;
  background-clip: text;
@@ -39,7 +39,9 @@ header {
   display: flex;
   align-items: center;
   cursor: pointer;
+  gap: .7em;
 }
+.imgH p{font-weight: bolder; font-size: larger;}
 .nav {
   display: none;
 }
@@ -140,9 +142,10 @@ main {
 .section1 {
   background-image: url("./images/header.png");
   padding: 35px;
-  padding-top: 0;
+  padding-top: 0px;
   overflow: hidden;
 }
+.main p{font-size: large;}
 .image{
   width: 80%;
   margin-left: auto;
@@ -245,13 +248,19 @@ main {
   font-family: 'Khula', sans-serif;
   font-size: 45px;
 }
+#diff1{
+  color: white;
+  font-family: 'Khula', sans-serif;
+  font-size: 45px;
+}
 .section5 h2{
   margin-bottom: 0;
 }
 .section5 p{
   margin-top: 0;
   margin-bottom: 0;
-  color: rgba(250, 250, 250, .8);
+  font-size: larger;
+  color: rgba(250, 250, 250, .9);
 }
 .phone img{
   margin-bottom: -3px;
@@ -268,6 +277,15 @@ main {
   margin-left: auto;
   margin-right: auto;
 }
+.courier .button4{
+  color: rgba(0, 0, 0, .7) !important;
+  background: white;
+  background-image: none !important;
+}
+.courier .button5{
+  color: white !important;
+  background-image: linear-gradient(to right, rgba(58, 186, 248, 1), rgba(99, 101, 241, 1))
+}
 .courier .button2{
   border: none;
   color: white;
@@ -276,13 +294,14 @@ main {
   background-image: linear-gradient(to right, rgba(58, 186, 248, 1), rgba(99, 101, 241, 1))
 }
 .courier .button3{
+  background-color: white;
   border: none;
   padding: 1.5em 3em;
   border-radius: 0 35px 35px 0;
   color: rgba(0, 0, 0, .7);
 }
-.courier .button2:hover{background: white;color: blue;}
-.courier .button3:hover{color: blue;}
+.wait2{display: none;}
+
 
 /*Section 6 Styles*/
 .section6 {
@@ -291,6 +310,7 @@ main {
 }
 .section6 p{
   margin-top: 30px;
+  font-size: larger;
 }
 .pric{
   display: flex;

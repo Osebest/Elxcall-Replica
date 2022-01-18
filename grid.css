@@ -15,6 +15,7 @@
 }
 @media only screen and (min-width: 768px) {
   .section1 h1{font-size: 50px;}
+  .main p{font-size: larger;}
   header{padding: 20px 40px;}
   #hamburgerBtn {
     display: none;
@@ -29,7 +30,8 @@
   }
   .image1{
     display: block;
-    width: 120%;
+    width: 130%;
+    height: 100%;
   }
   .section1{
     display: flex;
@@ -60,23 +62,8 @@
     position: relative;
   }
   .deliv {width: 120%;}
-  .log{
-    width: 200px;
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 1%;
-  }
-
   .section4>div:nth-of-type(1){
     order: 2;
-  }
-  .log1{
-    width: 200px;
-    display: block;
-    position: absolute;
-    top: 3%;
-    left: 25%;
   }
   .deliv1{width: 110%;}
 
@@ -104,6 +91,8 @@
 
 @media only screen and (min-width: 1024px) {
   header{padding: 30px 100px;}
+  .main p{font-size: x-large; width: 90%;}
+  .main{margin-top: 2em;}
   .nav li {
     font-size: larger;
     font-weight: bold;
@@ -144,7 +133,7 @@
 
   .courier .button2, .courier .button3{padding: 2.5em 5em; cursor: pointer;}
   #diff{font-size: 60px;}
-  .sect5 p{width: 65%;}
+  .sect5 p{width: 75%; font-size: larger;}
   .sect5{padding-left: 100px;}
   
   
@@ -152,8 +141,8 @@
     padding-left: 120px;
     padding-right: 100px;
   }
-  .section6 h1{font-size: 60px;}
-  .section6 p{width: 60%;}
+  .section6 h1{font-size: 60p5x;}
+  .section6 p{width: 60%; font-size: x-large;}
   .pric{width: 50%;}
 }
 
